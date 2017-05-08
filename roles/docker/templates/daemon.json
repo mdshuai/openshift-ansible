@@ -34,9 +34,6 @@
     "ip-masq": false,
     "labels": [],
     "live-restore": true,
-{% if docker_log_driver is defined  %}
-    "log-driver": "{{ docker_log_driver }}",
-{% endif %}
     "log-level": "",
     "log-opts": {{ docker_log_options|default({}) }},
     "max-concurrent-downloads": 3,
